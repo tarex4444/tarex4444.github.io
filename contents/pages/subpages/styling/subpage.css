@@ -1,0 +1,15 @@
+@import url(../../../../index.css);
+.pageback {
+    max-width: 66px;
+    max-height: 40px;
+    filter:invert(1);
+}
+.topicon {
+    justify-content: left;
+    width: 50px;
+    height: 50px;
+}
+.spacer {
+    justify-content: right;
+    width: 70vw;
+}
