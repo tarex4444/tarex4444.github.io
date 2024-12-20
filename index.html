@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl-pl">
     <head>
         <meta name="description" content="Projekt 1">
         <meta name="keywords" content="HTML5, CSS3, JavaScript">
         <meta name="author" content="Jakub Tara">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-        <title>Moje hobby to gry komputerowe</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <title>Moje hobby to gry esportowe</title>
         <link rel="stylesheet" href="index.css">
         <header>
           <img src="icons/gamepad icon.png" class="pagelogo">
             Gry e-sportowe by Jakub Tara
         </header>
         <script src="scripts/clock.js"></script>
+        <script src="scripts/switcheroo.js"></script>
     </head>
     <body>       
-      
         <div class="grid-container">
             <div class="grid-menu">
               <ul>
@@ -30,8 +31,10 @@
                   </div>
                 </article>
                 <li><a href="mailto:tarajakub2003@gmail.com?subject=Temat sprawy z którą piszę&body=Dzień dobry,">Wyślij do mnie maila!</a></li>
-                <li><a href="contents/pages/administrative.html">Warstwa administarcyjna</a></li>   
+                <li><a href="contents/pages/administrative.html">Warstwa administarcyjna</a></li>
+                <li><button id="mieszacz" onclick="reorderDiv()">Pomieszaj karty!</button></li>
               </ul>
+              
              
             </div>
             <div class="grid-main"> 
@@ -39,22 +42,22 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
-                            <img src="icons/cards/albion card.jpg" alt="Karta Albion Online" class="card">
+                            <img src="icons/cards/albioncard.jpg" alt="Karta Albion Online" class="card">
                           </div>
                           <div class="flip-card-back">
-                            <a href="contents/pages/subpages/albionpage.html"><img src="icons/cards/reverse albion.jpg" alt="Opis gry Albion Online" class="card"></a>
+                            <a href="contents/pages/subpages/albionpage.html"><img src="icons/cards/reversealbion.jpg" alt="Opis gry Albion Online" class="card"></a>
                           </div>
                         </div>
                       </div>
                 </div>-->
-                <div class="isolated-card">
+                <div class="isolated-card" id="cscard">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
-                            <img src="icons/cards/cs card.jpg" alt="Karta Counter Strike" class="card">
+                            <img src="icons/cards/cscard.jpg" alt="Karta Counter Strike" class="card">
                           </div>
                           <div class="flip-card-back">
-                            <a href="contents/pages/subpages/counterstrikepage.html"><img src="icons/cards/reverse cs.jpg" alt="Opis gry Counter Strike" class="card"></a>
+                            <a href="contents/pages/subpages/counterstrikepage.html"><img src="icons/cards/reversecs.jpg" alt="Opis gry Counter Strike" class="card"></a>
                           </div>
                         </div>
                       </div>
@@ -63,70 +66,70 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
-                            <img src="icons/cards/darksouls card.jpg" alt="Karta Dark Souls" class="card">
+                            <img src="icons/cards/darksoulscard.jpg" alt="Karta Dark Souls" class="card">
                           </div>
                           <div class="flip-card-back">
-                            <a href="contents/pages/subpages/darksoulspage.html"><img src="icons/cards/reverse darksouls.jpg" alt="Opis gry Dark Souls" class="card"></a>
+                            <a href="contents/pages/subpages/darksoulspage.html"><img src="icons/cards/reversedarksouls.jpg" alt="Opis gry Dark Souls" class="card"></a>
                           </div>
                         </div>
                       </div>
                 </div>-->
-                <div class="isolated-card">
+                <div class="isolated-card" id="deadlockcard">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
-                            <img src="icons/cards/deadlock card.jpg" alt="Karta Deadlock" class="card">
+                            <img src="icons/cards/deadlockcard.jpg" alt="KartaDeadlock" class="card">
                           </div>
                           <div class="flip-card-back">
-                            <a href="contents/pages/subpages/deadlockpage.html"><img src="icons/cards/reverse deadlock.jpg" alt="Opis gry Deadlock" class="card"></a>
+                            <a href="contents/pages/subpages/deadlockpage.html"><img src="icons/cards/reversedeadlock.jpg" alt="Opis gry Deadlock" class="card"></a>
                           </div>
                         </div>
                       </div>
                 </div>
-                <div class="isolated-card">
+                <div class="isolated-card" id="dotacard">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
-                            <img src="icons/cards/dota card.jpg" alt="Karta DotA" class="card">
+                            <img src="icons/cards/dotacard.jpg" alt="Karta DotA" class="card">
                           </div>
                           <div class="flip-card-back">
-                            <a href="contents/pages/subpages/dotapage.html"><img src="icons/cards/reverse dota.jpg" alt="Opis gry DotA" class="card"></a>
+                            <a href="contents/pages/subpages/dotapage.html"><img src="icons/cards/reversedota.jpg" alt="Opis gry DotA" class="card"></a>
                           </div>
                         </div>
                       </div>
                 </div>
-                <div class="isolated-card">
+                <div class="isolated-card" id="lolcard">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
-                            <img src="icons/cards/lol card.jpg" alt="Karta League of Legends" class="card">
+                            <img src="icons/cards/lolcard.jpg" alt="Karta League of Legends" class="card">
                           </div>
                           <div class="flip-card-back">
-                            <a href="contents/pages/subpages/leagueoflegendspage.html"><img src="icons/cards/reverse lol.jpg" alt="Opis gry League of Legends" class="card"></a>
+                            <a href="contents/pages/subpages/leagueoflegendspage.html"><img src="icons/cards/reverselol.jpg" alt="Opis gry League of Legends" class="card"></a>
                           </div>
                         </div>
                       </div>
                 </div>
-                <div class="isolated-card">
+                <div class="isolated-card" id="pubgcard">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
-                            <img src="icons/cards/pubg card.jpg" alt="Karta PUBG" class="card">
+                            <img src="icons/cards/pubgcard.jpg" alt="Karta PUBG" class="card">
                           </div>
                           <div class="flip-card-back">
-                            <a href="contents/pages/subpages/pubgpage.html"><img src="icons/cards/reverse pubg.jpg" alt="Opis gry PUBG" class="card"></a>
+                            <a href="contents/pages/subpages/pubgpage.html"><img src="icons/cards/reversepubg.jpg" alt="Opis gry PUBG" class="card"></a>
                           </div>
                         </div>
                       </div>
                 </div>
-                <div class="isolated-card">
+                <div class="isolated-card" id="valocard">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
-                            <img src="icons/cards/valo card.jpg" alt="Karta Valorant" class="card">
+                            <img src="icons/cards/valocard.jpg" alt="Karta Valorant" class="card">
                           </div>
                           <div class="flip-card-back">
-                            <a href="contents/pages/subpages/valorantpage.html"><img src="icons/cards/reverse valorant.jpg" alt="Opis gry Valorant" class="card"></a>
+                            <a href="contents/pages/subpages/valorantpage.html"><img src="icons/cards/reversevalorant.jpg" alt="Opis gry Valorant" class="card"></a>
                           </div>
                         </div>
                       </div>

@@ -1,10 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
 </head>
 <body>
- W budowie^tm
+    <form action="https://webdevbasics.net/scripts/demo.php" method="post" name="fm" id="formularz">
+        <label for="tresc">Treść wiadomości:</label><br>
+        <textarea name="tresc" rows="4" cols="40"></textarea><br>
+
+        <input type="submit" value="Wyślij">
+        <input type="reset" value="Anuluj">
+
+        <fieldset>
+            <legend> Dane Kontaktowe: </legend> <br>
+            <label for="nazwa">imię</label>
+            <input type="text" name="imie" size="20" required> <br>
+            <input type="checkbox" name="plec" checked="on"> Kobieta <br>
+            <label for="email">email</label>
+            <input type="email" name="email" placeholder="nazwa@email.com"> <br>
+            <label for="tel">telefon</label>
+            <input type="tel" name="tel" size="12" placeholder="123-45-67-89"
+                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}"> <br>
+            <label for="dataOd">data od</label>
+            <input type="date" name="dataOd" id="dataOd"><br>
+            <label for="dataDo">data do</label>
+            <input type="date" name="dataDo" id="dataDo"><br>
+            <label id="info"></label>
+            <label for="radio">w godzinach</label>
+            <input type="radio" name="godz" value="8:00-12:00">8:00-12:00 <br>
+            <input type="radio" name="godz" value="12:00-18:00">12:00-18:00 <br>
+            <input type="radio" name="godz" value="18:00-20:00">18:00-20:00 <br>
+            <select name="Kontakt"> 
+                <option value="telefon">telefon</option> 
+                <option value="sms">sms</option> 
+                <option value="e-mail">e-mail</option> 
+            </select> 
+        </fieldset>
+    </form>
+    <script src="../../scripts/walidacjaformularza.js"></script>
 </body>
 <footer>
 
