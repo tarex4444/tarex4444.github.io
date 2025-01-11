@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projekt 2 Jakub Tara</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body class="container-fluid">
+        <header class="mb-4">
+                <h1 class="text-center">Przykłady użycia technologii Bootstrap, jQuery i AJAX</h1>               
+        </header>
+        <div class="row">
+            <nav class="col-md-1 mb-4">
+                <ul id="nav-list" class="list-group">
+                    <li class="list-group-item"><a href="#" onclick="loadSubpage('subpages/stronaglowna.html')">Strona główna</a></li>
+                    <li class="list-group-item"><a href="#" onclick="loadSubpage('subpages/bootstrap.html')">Bootstrap</a></li>
+                    <li class="list-group-item"><a href="#" onclick="loadSubpage('subpages/jquery.html')">jQuery</a></li>
+                    <li class="list-group-item"><a href="#" onclick="loadSubpage('subpages/ajax.html')">AJAX</a></li>
+                </ul>
+            </nav>
+            <main id="subpageContent" class="col-md-9 mb-4 subpages">      
+            </main>
+        </div>
+        
+        <footer class="text-center py-3">
+            <p>by Jakub Tara</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+        <script src="scripts/indexjs.js"></script>
+    </body>
+</html>
