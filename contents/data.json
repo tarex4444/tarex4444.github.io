@@ -1,0 +1,14 @@
+[
+    {
+        "Text":"JSON - pobrany",
+        "Code":200
+    },
+    {
+        "Text":"Przedmiot - zaliczony",
+        "Code":5
+    },
+    {
+        "Text":"Punkty za projekt",
+        "Code":10
+    }
+]

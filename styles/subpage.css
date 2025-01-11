@@ -1,0 +1,8 @@
+#slidedText {
+    display: none;
+    background-color:azure;
+}
+
+#slideBtn{
+    cursor:pointer;
+}
